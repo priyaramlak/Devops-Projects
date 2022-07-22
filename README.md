@@ -19,9 +19,12 @@ Prerequisites:
     (And for this we need to update the sonarqube URL and token in pom.xml)
   * Once the code passed the checks in Sonarqube, need to send the artifact file or binary file(war file) to Nexus repository.
      (And for this we need to update the nexus username and password in settings.xml in maven-/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.8.6/conf/settings.xml)
+     Goals to deploy the artifacts to Nexus repo- deploy (clean package sonar:sonar deploy)
 
   * Once it got updated then we can start the build and the artifacts will save under snapshot repository in Nexus
-  *
+
+Now we are going to deploy to Tomcat server
+  --> And for this we need to install plugin called "deploy to container" in Jenkins
   
  
  
