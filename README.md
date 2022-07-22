@@ -14,5 +14,14 @@ Prerequisites:
  * Goals To build the app- Clean package
  * Goals to push the code to Sonarqube - sonar:sonar
  * To combine both it is- clean package sonar:sonar
+ Now build the Code
+  * Then need to transfer it to Sonarqube to check the code vulnerabilites and bugs
+    (And for this we need to update the sonarqube URL and token in pom.xml)
+  * Once the code passed the checks in Sonarqube, need to send the artifact file or binary file(war file) to Nexus repository.
+     (And for this we need to update the nexus username and password in settings.xml in maven-/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.8.6/conf/settings.xml)
+
+  * Once it got updated then we can start the build and the artifacts will save under snapshot repository in Nexus
+  *
+  
  
  
