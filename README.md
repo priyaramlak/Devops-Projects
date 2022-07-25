@@ -25,6 +25,11 @@ Prerequisites:
 
 Now we are going to deploy to Tomcat server
   --> And for this we need to install plugin called "deploy to container" in Jenkins
+  --->Update tomcat credentials in Jenkins
+  ---> vi cd/opt/tomcat/conf/tomcatusers.xml. In tomcatusers.xml,we need to update the manager-script role
+  ---> Restart the tomcat server
+  ----> Then start the build and it deploy to tomcat server
+  
   
  
  
